@@ -79,9 +79,11 @@ const hourlyDegree9 = document.querySelector('.hourly-degree-9');
 const hourlyDegree10 = document.querySelector('.hourly-degree-10');
 const hourlyDegree11 = document.querySelector('.hourly-degree-11');
 
-alert(
-  'If api does not work, it will have exceeded 50 calls per day, please try again in 24hrs'
-);
+setTimeout(() => {
+  alert(
+    'If api does not work, it will have exceeded 50 calls per day, please try again in 24hrs'
+  );
+}, 1000);
 
 //////////////////////////////////////////////////////////////////////////
 
