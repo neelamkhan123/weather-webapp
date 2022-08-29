@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Forecast</title>
+    <script type="module" src="./controller.js"></script>
+    <link rel="stylesheet" href="./scss/main.scss" />
+    <link rel="shortcut icon" type="image/png" href="./img/favicon.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/88eeb91d4d.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <main id="main">
+      <div class="container">
+        <!-- Nav Bar -->
+        <nav class="nav-bar">
+          <div class="nav-bar-list">
+            <div class="nav-bar-list-item search-bar">
+              <input
+                type="search"
+                class="search-bar-input"
+                placeholder="Enter your search"
+                aria-label="search"
+              />
+              <button class="btn-nav">
+                <i class="fa-solid fa-search" aria-label="submit search"></i>
+              </button>
+            </div>
+          </div>
+
+          <ul class="search-results"></ul>
+        </nav>
+
+        <div id="main-container">
+          <!-- Current Weather -->
+          <section id="main-container-a">
+            <div class="current-weather"></div>
+          </section>
+
+          <!-- Greetings and Current Time & Location -->
+          <section id="main-container-b">
+            <div class="greetings"></div>
+            <div class="current-location"></div>
+            <div class="current-time"></div>
+            <div class="current-date"></div>
+          </section>
+
+          <!-- Weekly Forecast -->
+          <section id="main-container-c">
+            <div class="sub-heading">This Week's Forecast</div>
+            <ul class="weekly-list">
+              <li class="weekly-list-item">
+                <div class="weather-icon">
+                  <img class="daily-icon-0" src="#" />
+                </div>
+                <div class="day-0"></div>
+                <div class="daily-degree">
+                  <span class="highest-degree min-0"></span>
+                  <span class="lowest-degree max-0"></span>
+                </div>
+              </li>
+
+              <li class="weekly-list-item">
+                <div class="weather-icon">
+                  <img class="daily-icon-1" src="#" />
+                </div>
+                <div class="day-1"></div>
+                <div class="daily-degree">
+                  <span class="highest-degree min-1"></span>
+                  <span class="lowest-degree max-1"></span>
+                </div>
+              </li>
+
+              <li class="weekly-list-item">
+                <div class="weather-icon">
+                  <img class="daily-icon-2" src="#" />
+                </div>
+                <div class="day-2"></div>
+                <div class="daily-degree">
+                  <span class="highest-degree min-2"></span>
+                  <span class="lowest-degree max-2"></span>
+                </div>
+              </li>
+
+              <li class="weekly-list-item">
+                <div class="weather-icon">
+                  <img class="daily-icon-3" src="#" />
+                </div>
+                <div class="day-3"></div>
+                <div class="daily-degree">
+                  <span class="highest-degree min-3"></span>
+                  <span class="lowest-degree max-3"></span>
+                </div>
+              </li>
+
+              <li class="weekly-list-item">
+                <div class="weather-icon">
+                  <img class="daily-icon-4" src="#" />
+                </div>
+                <div class="day-4"></div>
+                <div class="daily-degree">
+                  <span class="highest-degree min-4"></span>
+                  <span class="lowest-degree max-4"></span>
+                </div>
+              </li>
+            </ul>
+          </section>
+
+          <!-- Hourly Forecast -->
+          <section id="main-container-d">
+            <div class="sub-heading">Today's Forecast</div>
+            <ul class="hourly-list">
+              <li class="hourly-list-item">
+                <div class="hour-0"></div>
+                <div class="weather-icon">
+                  <img class="hourly-icon-0" src="#" />
+                </div>
+                <div class="hourly-degree-0"></div>
+              </li>
+
+              <li class="hourly-list-item">
+                <div class="hour-1"></div>
+                <div class="weather-icon">
+                  <img class="hourly-icon-1" src="#" />
+                </div>
+                <div class="hourly-degree-1"></div>
+              </li>
+
+              <li class="hourly-list-item">
+                <div class="hour-2"></div>
+                <div class="weather-icon">
+                  <img class="hourly-icon-2" src="#" />
+                </div>
+                <div class="hourly-degree-2"></div>
+              </li>
+
+              <li class="hourly-list-item">
+                <div class="hour-3"></div>
+                <div class="weather-icon">
+                  <img class="hourly-icon-3" src="#" />
+                </div>
+                <div class="hourly-degree-3"></div>
+              </li>
+
+              <li class="hourly-list-item">
+                <div class="hour-4"></div>
+                <div class="weather-icon">
+                  <img class="hourly-icon-4" src="#" />
+                </div>
+                <div class="hourly-degree-4"></div>
+              </li>
+
+              <li class="hourly-list-item">
+                <div class="hour-5"></div>
+                <div class="weather-icon">
+                  <img class="hourly-icon-5" src="#" />
+                </div>
+                <div class="hourly-degree-5"></div>
+              </li>
+
+              <li class="hourly-list-item">
+                <div class="hour-6"></div>
+                <div class="weather-icon">
+                  <img class="hourly-icon-6" src="#" />
+                </div>
+                <div class="hourly-degree-6"></div>
+              </li>
+
+              <li class="hourly-list-item">
+                <div class="hour-7"></div>
+                <div class="weather-icon">
+                  <img class="hourly-icon-7" src="#" />
+                </div>
+                <div class="hourly-degree-7"></div>
+              </li>
+
+              <li class="hourly-list-item">
+                <div class="hour-8"></div>
+                <div class="weather-icon">
+                  <img class="hourly-icon-8" src="#" />
+                </div>
+                <div class="hourly-degree-8"></div>
+              </li>
+
+              <li class="hourly-list-item">
+                <div class="hour-9"></div>
+                <div class="weather-icon">
+                  <img class="hourly-icon-9" src="#" />
+                </div>
+                <div class="hourly-degree-9"></div>
+              </li>
+
+              <li class="hourly-list-item">
+                <div class="hour-10"></div>
+                <div class="weather-icon">
+                  <img class="hourly-icon-10" src="#" />
+                </div>
+                <div class="hourly-degree-10"></div>
+              </li>
+
+              <li class="hourly-list-item">
+                <div class="hour-11"></div>
+                <div class="weather-icon">
+                  <img class="hourly-icon-11" src="#" />
+                </div>
+                <div class="hourly-degree-11"></div>
+              </li>
+            </ul>
+          </section>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
