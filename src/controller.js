@@ -187,6 +187,13 @@ const nightMode = function () {
     'linear-gradient(rgb(3, 113, 238), rgb(23, 4, 133))';
 };
 
+const dayMode = function () {
+  main.style.background =
+    'linear-gradient(315deg, rgb(141, 213, 255), rgb(204, 217, 231))';
+  navBar.style.background =
+    'linear-gradient(rgb(204, 217, 231), rgb(138, 221, 253))';
+};
+
 ////////////////////////////API CALLS//////////////////////////////
 
 const getSearch = async function () {
@@ -238,12 +245,9 @@ const getCurrentForecast = async function (locationKey, city, country) {
 
     // Greetings
     isDay = data[0].IsDayTime;
-    // isDay
-    //   ? (greetings.textContent = 'Good Day')
-    //   : (greetings.textContent = 'Good Night');
-
     if (isDay) {
       greetings.textContent = 'Good Day';
+      dayMode();
     }
     if (!isDay) {
       greetings.textContent = 'Good Night';
