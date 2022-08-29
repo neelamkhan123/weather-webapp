@@ -79,6 +79,10 @@ const hourlyDegree9 = document.querySelector('.hourly-degree-9');
 const hourlyDegree10 = document.querySelector('.hourly-degree-10');
 const hourlyDegree11 = document.querySelector('.hourly-degree-11');
 
+alert(
+  'If api does not work, it will have exceeded 50 calls per day, please try again in 24hrs'
+);
+
 //////////////////////////////////////////////////////////////////////////
 
 const apiKey = 'H8GaTAXb6X36KbRLq2UXM37U1c6OIvil';
