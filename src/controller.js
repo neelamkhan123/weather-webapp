@@ -192,7 +192,7 @@ const nightMode = function () {
 const getSearch = async function () {
   try {
     const res = await fetch(
-      `http://dataservice.accuweather.com/locations/v1/cities/search?apikey=${apiKey}&q=${inputValue}`
+      `https://dataservice.accuweather.com/locations/v1/cities/search?apikey=${apiKey}&q=${inputValue}`
     );
     const data = await res.json();
 
@@ -225,7 +225,7 @@ let time;
 const getCurrentForecast = async function (locationKey, city, country) {
   try {
     const res = await fetch(
-      `http://dataservice.accuweather.com/currentconditions/v1/${locationKey}?apikey=${apiKey}${unit}`
+      `https://dataservice.accuweather.com/currentconditions/v1/${locationKey}?apikey=${apiKey}${unit}`
     );
     const data = await res.json();
     // console.log(data);
@@ -268,7 +268,7 @@ const getCurrentForecast = async function (locationKey, city, country) {
 const getDailyForecast = async function (locationKey) {
   try {
     const res = await fetch(
-      `http://dataservice.accuweather.com/forecasts/v1/daily/5day/${locationKey}?apikey=${apiKey}${unit}`
+      `https://dataservice.accuweather.com/forecasts/v1/daily/5day/${locationKey}?apikey=${apiKey}${unit}`
     );
     const data = await res.json();
 
@@ -289,7 +289,7 @@ const getDailyForecast = async function (locationKey) {
 const getHourlyForecast = async function (locationKey) {
   try {
     const res = await fetch(
-      `http://dataservice.accuweather.com/forecasts/v1/hourly/12hour/${locationKey}?apikey=${apiKey}${unit}`
+      `https://dataservice.accuweather.com/forecasts/v1/hourly/12hour/${locationKey}?apikey=${apiKey}${unit}`
     );
     const data = await res.json();
 
